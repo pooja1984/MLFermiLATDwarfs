@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include fcbinds.dat
+include scan_DM_mass.dat
+include default_dwarf_summary_table.dat
+include README_analysis_rundown.ipynb
+include AtProduction_gammas.dat 
+include AtProductionNoEW_gammas.dat 
+
+graft Jfactors
+graft bkg_data
+graft misc
