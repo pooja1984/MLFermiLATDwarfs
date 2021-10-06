@@ -1,0 +1,73 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/MIT",
+    "codeRepository": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/",
+    "dateCreated": "2021-10-06",
+    "downloadUrl": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/-/archive/master/mlfermidwarfs-master.tar.gz",
+    "name": "Dark matter constraints from dwarf galaxies: a data-driven LAT analysis",
+    "description": "Python code to derive data-driven upper limits on the thermally averaged, velocity-weighted pair-annihilation cross-section (velocity-independent) of a user-defined particle dark matter model using the expected differential gamma-ray spectrum of pair-annihilation events (provided by the user) as well as 10 years of Fermi-LAT data from observations of the Milky Way´s dwarf spheroidal galaxies.",
+    "developmentStatus": "active",
+    "isPartOf": "https://gitlab.in2p3.fr/escape2020,https://projectescape.eu/",
+    "keywords": [
+        "ESCAPE",
+        "jupyter-notebook"
+    ],
+    "programmingLanguage": [
+        "Python"
+    ],
+    "runtimePlatform": [
+        "Python >3.6"
+    ],
+    "softwareRequirements": [
+        "numpy>=1.19",
+        "scipy>=1.6.2",
+        "iminuit<=1.5.4",
+        "astropy>=4.1",
+        "scikit-learn>=0.24"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Francesca",
+            "familyName": "Calore",
+            "email": "calore@lapth.cnrs.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "LAPTh, CNRS"
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Bryan",
+            "familyName": "Zaldívar",
+            "email": "b.zaldivar.m@csic.es",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "IFT-UAM/CSIC"
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Pasquale",
+            "familyName": "Serpico",
+            "email": "serpico@lapth.cnrs.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "LAPTh, CNRS"
+            }
+        }
+    ],
+    "contributor": [
+        {
+            "@type": "Person",
+            "givenName": "Christopher",
+            "familyName": "Eckner",
+            "email": "eckner@lapth.cnrs.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "LAPTh, CNRS"
+            }
+        }
+    ]
+}
