@@ -4,6 +4,8 @@
     "license": "https://spdx.org/licenses/MIT",
     "codeRepository": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/",
     "dateCreated": "2021-10-06",
+    "softwareVersion": "v1.01",
+    "developmentStatus": "active",
     "downloadUrl": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/-/archive/master/mlfermidwarfs-master.tar.gz",
     "name": "Dark matter constraints from dwarf galaxies: a data-driven LAT analysis",
     "description": "Python code to derive data-driven upper limits on the thermally averaged, velocity-weighted pair-annihilation cross-section (velocity-independent) of a user-defined particle dark matter model using the expected differential gamma-ray spectrum of pair-annihilation events (provided by the user) as well as 10 years of Fermi-LAT data from observations of the Milky Way´s dwarf spheroidal galaxies.",
