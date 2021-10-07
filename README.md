@@ -21,8 +21,8 @@ Python 3.6 or higher and the following packages:
 This project can be installed as follows:
 
 ```sh
-  $ git clone https://gitlab.in2p3.fr/francesca.calore/mlfermidwarfs.git
-  $ cd mlfermidwarfs
+  $ git clone https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs.git
+  $ cd mlfermilatdwarfs
   $ pip install .
 ``` 
 
