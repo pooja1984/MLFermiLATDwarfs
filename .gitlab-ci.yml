@@ -1,0 +1,29 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+
+test-job:
+  stage: test
+  script:
+    - echo "This job tests something"
+
+deploy_zenodo:
+    stage: deploy
+    image: gitlab-registry.in2p3.fr/escape2020/wp3/zenodoci:v1.2
+    before_script:
+      - test_connection_zenodo --token $ZENODO_TOKEN --sandbox False -p $CI_PROJECT_DIR
+    script:
+      - mkdir -p build
+      - parse_last_release_git.sh $CI_PROJECT_NAME $CI_PROJECT_URL
+      - if [[ -f ./codemeta.json ]]; then cp ./codemeta.json ./build; fi
+      - ls ./build
+
+      - upload_new_deposit --token $ZENODO_TOKEN --sandbox False --input-dir ./build
+    only:
+      - tags
