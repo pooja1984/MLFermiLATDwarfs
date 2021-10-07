@@ -4,7 +4,7 @@
     "license": "https://spdx.org/licenses/MIT",
     "codeRepository": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/",
     "dateCreated": "2021-10-06",
-    "version": "v1.01",
+    "version": "v1.0.1",
     "developmentStatus": "active",
     "downloadUrl": "https://gitlab.in2p3.fr/christopher.eckner/mlfermilatdwarfs/-/archive/master/mlfermidwarfs-master.tar.gz",
     "name": "Dark matter constraints from dwarf galaxies: a data-driven LAT analysis",
