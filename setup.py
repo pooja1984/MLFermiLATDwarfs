@@ -36,7 +36,8 @@ setup(
         'scipy >= 1.6.2',
         'iminuit <= 1.5.4',
         'astropy >= 4.1',
-        'scikit-learn >= 0.24'
+        'scikit-learn >= 0.24',
+        'matplotlib',
     ],
 
 
