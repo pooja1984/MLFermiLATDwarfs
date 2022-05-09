@@ -1,15 +1,23 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#priority-of-environment-variables
 stages:
- - deploy 
-
+- deploy
+- test
 deploy_zenodo:
   stage: deploy
   image: gitlab-registry.in2p3.fr/escape2020/wp3/eossr:latest
   before_script:
-    - eossr-check-connection-zenodo --token $ZENODO_TOKEN --sandbox False -p $CI_PROJECT_DIR
+  - eossr-check-connection-zenodo --token $ZENODO_TOKEN --sandbox False -p $CI_PROJECT_DIR
   script:
-    - gitlab_prepare_upload_zenodo.sh $CI_PROJECT_NAME $CI_PROJECT_DIR zenodo_build
-    - ls zenodo_build
-
-    - eossr-upload-repository -t $ZENODO_TOKEN -s False -i zenodo_build 
+  - gitlab_prepare_upload_zenodo.sh $CI_PROJECT_NAME $CI_PROJECT_DIR zenodo_build
+  - ls zenodo_build
+  - eossr-upload-repository -t $ZENODO_TOKEN -s False -i zenodo_build
   only:
-    - tags
+  - tags
+sast:
+  stage: test
+include:
+- template: Security/SAST.gitlab-ci.yml
