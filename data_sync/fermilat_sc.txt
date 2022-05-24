@@ -717,3 +717,5 @@ lat_spacecraft_weekly_w725_p310_v001.fits
 
 lat_spacecraft_weekly_w726_p310_v001.fits
 lat_spacecraft_weekly_w727_p310_v001.fits
+lat_spacecraft_weekly_w728_p310_v001.fits
+lat_spacecraft_weekly_w729_p310_v001.fits

@@ -855,3 +855,5 @@ lat_photon_weekly_w724_p305_v001.fits
 lat_photon_weekly_w725_p305_v001.fits
 lat_photon_weekly_w726_p305_v001.fits
 lat_photon_weekly_w727_p305_v001.fits
+lat_photon_weekly_w728_p305_v001.fits
+lat_photon_weekly_w729_p305_v001.fits
